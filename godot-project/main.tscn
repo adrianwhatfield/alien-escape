@@ -914,19 +914,28 @@ layer_0/tile_data = PackedInt32Array(2555976, 131072, 2, 2490440, 131072, 1, 242
 [node name="Player" parent="." instance=ExtResource("1_rcwek")]
 
 [node name="Crab" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(245, 103)
 
 [node name="Crab2" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(350, -31)
 
 [node name="Crab3" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(333, 54)
 
 [node name="Crab4" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(34, 297)
 
 [node name="Crab5" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(62, 385)
 
 [node name="Crab6" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(265, 314)
 
 [node name="Crab7" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(322, 250)
 
 [node name="Crab8" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(645, 395)
 
 [node name="Crab9" parent="." instance=ExtResource("3_2n82x")]
+position = Vector2(629, 164)
