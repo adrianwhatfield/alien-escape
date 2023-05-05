@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpbvv4snj5li7"]
+[gd_scene load_steps=9 format=3 uid="uid://dpbvv4snj5li7"]
 
 [ext_resource type="Texture2D" uid="uid://cnu6e2nfsjfrt" path="res://Assets/alien-tiles.png" id="1_f1q1i"]
 [ext_resource type="PackedScene" uid="uid://c3wr8ntk4mxct" path="res://player.tscn" id="1_rcwek"]
+[ext_resource type="Script" path="res://main.gd" id="1_wx8oo"]
 [ext_resource type="PackedScene" uid="uid://cwmv8xievtbu2" path="res://crab.tscn" id="3_2n82x"]
+[ext_resource type="PackedScene" uid="uid://duv1rkv6qpqng" path="res://key.tscn" id="5_f7i7x"]
+[ext_resource type="PackedScene" uid="uid://mrkhsrq5iwao" path="res://door.tscn" id="6_01v0w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_et4xs"]
 texture = ExtResource("1_f1q1i")
@@ -904,6 +907,7 @@ terrain_set_0/terrain_1/color = Color(0.839216, 0.807843, 0.866667, 1)
 sources/0 = SubResource("TileSetAtlasSource_et4xs")
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_wx8oo")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -939,3 +943,18 @@ position = Vector2(645, 395)
 
 [node name="Crab9" parent="." instance=ExtResource("3_2n82x")]
 position = Vector2(629, 164)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Progress Bar" type="ProgressBar" parent="UI"]
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 325.0
+offset_bottom = 47.0
+show_percentage = false
+
+[node name="Key" parent="." instance=ExtResource("5_f7i7x")]
+position = Vector2(763, 271)
+
+[node name="Door" parent="." instance=ExtResource("6_01v0w")]
+position = Vector2(-35, 0)

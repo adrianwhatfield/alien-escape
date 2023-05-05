@@ -57,3 +57,5 @@ shape = SubResource("CircleShape2D_7kvcj")
 libraries = {
 "": SubResource("AnimationLibrary_mri73")
 }
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

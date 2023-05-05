@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://mrkhsrq5iwao"]
+
+[ext_resource type="Script" path="res://door.gd" id="1_h1moo"]
+[ext_resource type="Texture2D" uid="uid://crywjxrp4hx7e" path="res://Assets/alien-door1.png" id="1_noeai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cc6uw"]
+size = Vector2(12, 14)
+
+[node name="Door" type="Area2D"]
+script = ExtResource("1_h1moo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_noeai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cc6uw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
